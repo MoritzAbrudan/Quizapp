@@ -49,3 +49,16 @@ function showQuestion() {
     document.getElementById('answer_3').innerHTML = question['answer_3'];
     document.getElementById('answer_4').innerHTML = question['answer_4'];
 }
+
+
+function answer(selection) {
+    let question = questions[currentQuestion];
+
+    let selectetQuestionNumber = selection.slice(-1);
+
+    if (selectetQuestionNumber == question['right_answer']) {
+        document.getElementById(selection).parentNode.classList.add('bg-success');
+    } else {
+        document.getElementById(selection).parentNode.classList.add('bg-danger');
+    };
+}
