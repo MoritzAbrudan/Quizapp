@@ -10,10 +10,54 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 
+    <!-- Bootstrap Files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Quizapp</span>
+        </div>
+    </nav>
 
+    <div class="container">
+        <div class="card quizcard">
+            <img src="./img/pencil.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Frage</h5>
+                <div class="card mb-2">
+                    <div class="card-body">
+                        Antwort
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-body">
+                        Antwort
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-body">
+                        Antwort
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-body">
+                        Antwort
+                    </div>
+                </div>
+                <div class="question-footer">
+                    <span>
+                        <b>1</b> von <b>5</b> Fragen
+                    </span>
+
+                    <button class="btn btn-primary">Nächste Frage</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
