@@ -56,9 +56,14 @@ function answer(selection) {
 
     let selectetQuestionNumber = selection.slice(-1);
 
+    let idOfRightAnswer = `answer_${question['right_answer']}`;
+
     if (selectetQuestionNumber == question['right_answer']) {
         document.getElementById(selection).parentNode.classList.add('bg-success');
     } else {
         document.getElementById(selection).parentNode.classList.add('bg-danger');
+        document.getElementById(idOfRightAnswer).parentNode.classList.add('bg-success');
     };
+
+    document.getElementById('next-button').disabled = false;
 }
