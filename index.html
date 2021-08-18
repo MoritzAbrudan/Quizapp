@@ -27,12 +27,23 @@
         <div class="card quizcard">
             <img src="./img/pencil.jpg" id="header-img" class="card-img-top">
 
+            <div class="progress">
+                <div class="progress-bar" id="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    25%
+                </div>
+            </div>
+
             <div class="card-body" id="endScreen" style="display: none;">
                 <div class="text-center result">
                     Quiz beendet!
                 </div>
                 <div class="text-center">
                     Du hast <b id="right-questions"></b> von <b id="amount-of-questions">xxx</b> Fragen richtig beantwortet!
+                </div>
+                <div class="button-row">
+                    <button class="btn btn-primary" id="refresh-button" onclick="restartGame()">
+                        Nächster Versuch
+                    </button>
                 </div>
             </div>
 
